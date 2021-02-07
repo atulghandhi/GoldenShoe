@@ -1,0 +1,176 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 160px 260px 60px;
+    grid-template-rows: minmax(20px, auto);
+    justify-content: center;
+
+    border: 3px solid var(--tertiary-color);
+}
+
+.logo{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 20px 0 0 10px;
+}
+
+.logo-heading{
+    color: var(--quaternary-color);
+    margin-left: 20px;
+    font-family: "Avenir Next", serif;
+}
+
+.search-bar {
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+    margin-top: 20px;
+    align-self: center;
+    justify-self: center;
+}
+
+#searchBar{
+    border: 1px solid var(--primary-color);
+    border-radius: 25px;
+    padding: 5px;
+    margin: 30px 10px 10px 10px;
+}
+
+#searchBar:focus{
+    border: 1px solid var(--quaternary-color);
+    outline: none;
+}
+
+.basket{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    margin: 40px 20px 2px 2px;
+}
+
+.menu{
+    grid-column: 1/4;
+    grid-row: 2/3;
+
+    z-index: 1;
+    margin: 12px 4px 4px 12px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.navbar, .womens-menu, .mens-menu{
+    grid-column: 1/4;
+    grid-row: 2/3;
+
+    color: white;
+    background:  var(--tertiary-color);
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navBarItem{
+    width: fit-content;
+    padding: 5px 0;
+    font-size: 22px;
+    font-family: Avenir, sans-serif;
+}
+
+#nav1{
+    margin-top: 10px;
+}
+
+#nav5{
+    margin-bottom: 10px;
+}
+
+.content{
+    grid-column: 1/4;
+    grid-row: 3/4;
+}
+
+.content-card{
+    background: #ffffff;
+    color: #222222;
+    margin: 10px;
+    padding: 5px;
+    line-height: 1.6em;
+    position: relative;
+}
+
+/* Bottom left text */
+.bottom-left {
+    position: absolute;
+    margin: 5px;
+    bottom: 16px;
+    left: 16px;
+
+    color: white;
+    font-size: 24px;
+    font-family: cursive;
+}
+
+.bottom-left#kids {
+    background: var(--quaternary-color);
+    border-radius: 10px;
+    padding: 7px;
+}
+
+.content-card:hover {
+    box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 7px 7px var(--primary-color);
+}
+
+/* unvisited link */
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+}
+
+/* mouse over link */
+a:hover {
+    COLOR: var(--primary-color);
+    font-weight: bolder
+}
+
+span{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left: 0;
+
+    z-index: 1;
+
+    /* fixes overlap error in IE7/8, */
+    background-image: url('../resources/misc/empty.gif');
+}
+
+.invisible{
+    display: none;
+}
+
+.footer{
+    grid-column: 1/4;
+    grid-row: 4/5;
+
+    background: var(--tertiary-color);
+    color: white;
+    font-style: oblique;
+    padding:20px 0 10px 0;
+    vertical-align: center;
+}
+
+.footer p{
+    text-align:center;
+    font-size:14px;
+    font-family: Georgia, serif;
+    font-weight: 300;
+}

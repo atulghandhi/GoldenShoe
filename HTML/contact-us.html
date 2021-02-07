@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/contact-us.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="logo">
+        <img src="../resources/misc/shoe.jpg" alt="logo" width="150px">
+        <h3 class="logo-heading">Golden Shoe</h3>
+    </div> <!--  end of logo  -->
+
+    <div class="search-bar">
+        <input id="searchBar" type="text" placeholder="Search...">
+    </div> <!--  end of searchbar  -->
+
+    <div class="basket">
+        <img src="../resources/misc/basket.png" alt="" width="50px">
+    </div> <!--  end of basket  -->
+
+    <div class="menu">
+        <img src="../resources/misc/menu-icon.png" alt="menu icon" width="40px">
+    </div>
+
+    <ul class="navbar invisible">
+        <li class="navBarItem" id="nav1">
+            Womens
+            <ul class="womens-menu invisible">
+                <li class="navBarItem">
+                    Sports
+                </li>
+                <li class="navBarItem">
+                    Casual
+                </li>
+                <li class="navBarItem">
+                    Slippers
+                </li>
+                <li class="navBarItem">
+                    Sandals
+                </li>
+                <li class="navBarItem">
+                    Evening wear
+                </li>
+            </ul>
+        </li>
+        <li class="navBarItem" id="nav2">
+            Mens
+            <ul class="mens-menu invisible">
+                <li class="navBarItem">
+                    Sports
+                </li>
+                <li class="navBarItem">
+                    Casual
+                </li>
+                <li class="navBarItem">
+                    Slippers
+                </li>
+                <li class="navBarItem">
+                    Sandals
+                </li>
+                <li class="navBarItem">
+                    High heels
+                </li>
+                <li class="navBarItem">
+                    Evening wear
+                </li>
+            </ul>
+        </li>
+        <li class="navBarItem" id="nav3">
+            Kids
+        </li>
+        <li class="navBarItem" id="nav4">
+            About us
+        </li>
+        <li class="navBarItem" id="nav5">
+            Contact us
+        </li>
+    </ul> <!--  end of navBar  -->
+
+    <div class="content">
+
+        <h3 id="form-subheading">Contact Form</h3>
+
+        <div class="form-container">
+            <form action="/action_page.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="UK">United Kingdom</option>
+                    <option value="USA">United States</option>
+                    <option value="AUS">Australia</option>
+                    <option value="AUS">Germany</option>
+                    <option value="AUS">France</option>
+                </select>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Please explain your query..." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+
+    </div> <!--  end of content  -->
+
+    <div class="footer">
+        <p>
+            Golden Shoe   &bull;   079-1234-567   &bull;   customer-service@goldenshoe.com <br><br>
+        </p>
+    </div> <!-- End Footer Block -->
+
+</div>  <!--  end of container  -->
+
+
+<script src="../JS/index.js"></script>
+</body>
+</html>

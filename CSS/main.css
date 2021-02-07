@@ -1,0 +1,16 @@
+@import "phone.css";
+@import "desktop.css";
+
+:root {
+    --primary-color: #262335;
+    --secondary-color: #503c52;
+    --tertiary-color: #9f6c66;
+    --quaternary-color: #d4896a;
+    --quinary-color: #ffbb6c;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
